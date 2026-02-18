@@ -1,0 +1,657 @@
+{
+  "meta": {
+    "image": "assets/map.png",
+    "width": 1108,
+    "height": 1144
+  },
+  "plots": [
+    {
+      "address": "800 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "802 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "804 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "806 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "808 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "810 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "812 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "814 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "816 Thistle & Thorn Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "100 Juniper Grove",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "101 Juniper Grove",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "102 Juniper Grove",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "103 Juniper Grove",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "104 Juniper Grove",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "105 Juniper Grove",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "107 Juniper Grove",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "400 Stardust Street",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "402 Stardust Street",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "500 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "502 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "600 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "602 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "603 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "605 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "607 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "701 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "703 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "705 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "700 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "702 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "704 Candlelight Court",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "200 Firefly Field",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "201 Firefly Field",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "202 Firefly Field",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "203 Firefly Field",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "204 Firefly Field",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "205 Firefly Field",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "300 Toadstool Trail",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "302 Toadstool Trail",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "900 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "901 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "903 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "1000 Teacup Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1002 Teacup Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1004 Teacup Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "1006 Teacup Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1008 Teacup Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1010 Teacup Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1012 Teacup Terrace",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1100 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1101 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1102 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1103 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1104 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1105 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1106 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1107 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1108 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1109 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1110 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "1111 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1112 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1113 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "1114 Apple Cider Way",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "902 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "904 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "905 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    },
+    {
+      "address": "906 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "907 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "908 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "909 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "910 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "911 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "912 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "913 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "914 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "915 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "916 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "917 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "918 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": false
+    },
+    {
+      "address": "919 Wildflower Walk",
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "serverBuilding": true
+    }
+  ]
+}

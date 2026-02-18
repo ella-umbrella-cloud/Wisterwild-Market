@@ -1,0 +1,10 @@
+{
+  "stalls": [
+    {
+      "name": "Exchange Stall",
+      "x": 900,
+      "y": 900,
+      "type": "exchange"
+    }
+  ]
+}
