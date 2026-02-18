@@ -95,11 +95,13 @@ function rectToPolygon(x, y, w, h) {
   map = new ol.Map({
   target: "map",
   layers: [imageLayer, drawLayer],
-  interactions: ol.interaction.defaults({
-    dragPan: false,
-    mouseWheelZoom: true,
-    doubleClickZoom: false
-  }),
+
+  // Only include the interactions we want (no drag-pan)
+  interactions: new ol.Collection([
+    new ol.interaction.MouseWheelZoom(),
+    new ol.interaction.DoubleClickZoom()
+  ]),
+
   view: new ol.View({
     projection,
     center: [width / 2, height / 2],
@@ -108,6 +110,7 @@ function rectToPolygon(x, y, w, h) {
     maxZoom: 8
   })
 });
+
 // Disable ALL default interactions (prevents drag-to-pan from stealing your rectangle draw)
 map.getInteractions().clear();
 
