@@ -93,16 +93,22 @@ function rectToPolygon(x, y, w, h) {
   drawLayer = new ol.layer.Vector({ source: drawSource });
 
   map = new ol.Map({
-    target: "map",
-    layers: [imageLayer, drawLayer],
-    view: new ol.View({
-      projection,
-      center: [width / 2, height / 2],
-      zoom: 2,
-      minZoom: 1,
-      maxZoom: 8
-    })
-  });
+  target: "map",
+  layers: [imageLayer, drawLayer],
+  interactions: ol.interaction.defaults({
+    dragPan: false,
+    mouseWheelZoom: true,
+    doubleClickZoom: false
+  }),
+  view: new ol.View({
+    projection,
+    center: [width / 2, height / 2],
+    zoom: 2,
+    minZoom: 1,
+    maxZoom: 8
+  })
+});
+
 
   // Helper: show existing rect for selected address
   function showExistingRect(address) {
