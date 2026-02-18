@@ -1,0 +1,17 @@
+{
+  "name": "shop-map-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Discord bot to register/unclaim shop addresses and publish data/shops.json to GitHub",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "register-commands": "node register-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "@octokit/rest": "^21.0.0",
+    "dotenv": "^16.4.5"
+  }
+}
