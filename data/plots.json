@@ -7,34 +7,34 @@
   "plots": [
     {
       "address": "800 Thistle & Thorn Terrace",
-      "x": 0,
-      "y": 0,
-      "w": 0,
-      "h": 0,
+      "x": 175,
+      "y": 73,
+      "w": 116,
+      "h": 92
       "serverBuilding": true
     },
     {
       "address": "802 Thistle & Thorn Terrace",
-      "x": 0,
-      "y": 0,
-      "w": 0,
-      "h": 0,
+      "x": 120,
+      "y": 116,
+      "w": 24,
+      "h": 27
       "serverBuilding": true
     },
     {
       "address": "804 Thistle & Thorn Terrace",
-      "x": 0,
-      "y": 0,
-      "w": 0,
-      "h": 0,
+      "x": 83,
+      "y": 148,
+      "w": 24,
+      "h": 28
       "serverBuilding": true
     },
     {
       "address": "806 Thistle & Thorn Terrace",
-      "x": 0,
-      "y": 0,
-      "w": 0,
-      "h": 0,
+      "x": 141,
+      "y": 269,
+      "w": 55,
+      "h": 48
       "serverBuilding": false
     },
     {
