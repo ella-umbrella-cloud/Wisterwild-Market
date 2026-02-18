@@ -108,6 +108,14 @@ function rectToPolygon(x, y, w, h) {
     maxZoom: 8
   })
 });
+// Disable ALL default interactions (prevents drag-to-pan from stealing your rectangle draw)
+map.getInteractions().clear();
+
+// Add back only mouse wheel zoom (optional)
+map.addInteraction(new ol.interaction.MouseWheelZoom());
+
+// Optional: allow zoom with double-click (optional)
+map.addInteraction(new ol.interaction.DoubleClickZoom());
 
 
   // Helper: show existing rect for selected address
