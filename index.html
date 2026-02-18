@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minecraft Shop Map</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">
+      <h1>Shop Map</h1>
+      <div class="subtitle">Hover a plot to see the owner. Click for details. Updates auto-refresh.</div>
+    </div>
+    <div class="actions">
+      <input id="search" placeholder="Search address / owner / shop…" />
+      <button id="refreshBtn" title="Refresh shop data now">Refresh</button>
+      <a class="btn" href="editor.html" title="Rectangle plot editor (admin)">Editor</a>
+    </div>
+  </header>
+
+  <div id="map" class="map"></div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <div id="popup" class="popup hidden" role="dialog" aria-modal="false">
+    <div id="popup-content"></div>
+    <div class="popup-actions">
+      <button id="popup-close">Close</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

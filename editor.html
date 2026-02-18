@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plot Rectangle Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .editorbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 12px;border-bottom:1px solid #e5e5e5;}
+    .editorbar select,.editorbar input{padding:8px 10px;border-radius:10px;border:1px solid #ddd;}
+    .editorbar button,.editorbar a{padding:8px 10px;border-radius:10px;border:1px solid #ddd;background:#fff;cursor:pointer;text-decoration:none;color:inherit;}
+    .editorbar button:hover{background:#f6f6f6;}
+    .hint{color:#666;font-size:13px;}
+    #out{width:100%;height:160px;font-family:ui-monospace, SFMono-Regular, Menlo, monospace;}
+    .panel{padding:10px 12px;border-top:1px solid #e5e5e5;}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+</head>
+<body>
+  <div class="editorbar">
+    <a href="index.html">← Back</a>
+    <strong>Rectangle Plot Editor</strong>
+    <span class="hint">Select an address, then click+drag to draw a rectangle. Click “Copy Update” and paste into data/plots.json.</span>
+  </div>
+
+  <div class="editorbar">
+    <label>Address:</label>
+    <select id="addr"></select>
+    <button id="clear">Clear Rect</button>
+    <button id="copy">Copy Update</button>
+  </div>
+
+  <div id="map" class="map"></div>
+
+  <div class="panel">
+    <div class="hint">This editor generates a single plot entry JSON. Replace the matching address entry in <b>data/plots.json</b>.</div>
+    <textarea id="out" readonly></textarea>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>
