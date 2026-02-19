@@ -1,5 +1,20 @@
 {
   "labels": [
-    { "text": "TEST LABEL", "x": 550, "y": 650, "type": "street" }
+    { "text": "Thistle & Thorn Terrace", "x": 212, "y": 522, "type": "street" },
+    { "text": "Juniper Grove", "x": 334, "y": 242, "type": "street" },
+    { "text": "Candlelight Court", "x": 797, "y": 46, "type": "street" },
+    { "text": "Candlelight Court", "x": 1017, "y": 352, "type": "street" },
+    { "text": "Firefly Field", "x": 370, "y": 414, "type": "street" },
+    { "text": "Toadstool Trail", "x": 476, "y": 305, "type": "street" },
+    { "text": "Wildflower Walk", "x": 494, "y": 969, "type": "street" },
+    { "text": "Wildflower Walk", "x": 505, "y": 560, "type": "street" },
+    { "text": "Wildflower Walk", "x": 694, "y": 1225, "type": "street" },
+    { "text": "Teacup Terrace", "x": 358, "y": 669, "type": "street" },
+    { "text": "Apple Cider Way", "x": 319, "y": 816, "type": "street" },
+    { "text": "Apple Cider Way", "x": 573, "y": 696, "type": "street" },
+
+    { "text": "Loot House", "x": 175, "y": 1044, "type": "major" },
+    { "text": "Trading Hall", "x": 660, "y": 388, "type": "major" },
+    { "text": "Market Spawn", "x": 217, "y": 154, "type": "major" }
   ]
 }
