@@ -11,5 +11,6 @@
 { "text": "Apple Cider Way", "x": 319, "y": 816, "type": "street" },
 { "text": "Apple Cider Way", "x": 573, "y": 696, "type": "street" },
 
-{ "text": "Marketplace", "x": 500, "y": 500, "type": "major " },
-{ "text": "Town Hall", "x": 650, "y": 620, "type": "major" }
+{ "text": "Loot House", "x": 175, "y": 1044, "type": "major " },
+{ "text": "Trading Hall", "x": 660, "y": 388, "type": "major" },
+{ "text": "Market Spawn", "x": 217, "y": 154, "type": "major" }
