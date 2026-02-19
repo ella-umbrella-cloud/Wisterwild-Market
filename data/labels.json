@@ -1,10 +1,11 @@
-{
-  "labels": [
-    {
-      "text": "Teacup Terrace",
-      "x": 760,
-      "y": 840,
-      "type": "street"
-    }
-  ]
-}
+{ "text": "Thistle & Thorn Terrace", "x": 100, "y": 100, "type": "street" },
+{ "text": "Juniper Grove", "x": 100, "y": 140, "type": "street" },
+{ "text": "Candlelight Court", "x": 100, "y": 180, "type": "street" },
+{ "text": "Firefly Field", "x": 100, "y": 220, "type": "street" },
+{ "text": "Toadstool Trail", "x": 100, "y": 260, "type": "street" },
+{ "text": "Wildflower Walk", "x": 100, "y": 300, "type": "street" },
+{ "text": "Teacup Terrace", "x": 100, "y": 340, "type": "street" },
+{ "text": "Apple Cider Way", "x": 100, "y": 380, "type": "street" },
+
+{ "text": "Marketplace", "x": 500, "y": 500, "type": "major" },
+{ "text": "Town Hall", "x": 650, "y": 620, "type": "major" }
