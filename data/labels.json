@@ -1,20 +1,23 @@
 {
   "labels": [
-    { "text": "Thistle & Thorn Terrace", "x": 212, "y": 522, "type": "street" },
-    { "text": "Juniper Grove", "x": 334, "y": 242, "type": "street" },
-    { "text": "Candlelight Court", "x": 797, "y": 46, "type": "street" },
-    { "text": "Candlelight Court", "x": 1017, "y": 352, "type": "street" },
-    { "text": "Firefly Field", "x": 370, "y": 414, "type": "street" },
-    { "text": "Toadstool Trail", "x": 476, "y": 305, "type": "street" },
-    { "text": "Wildflower Walk", "x": 494, "y": 969, "type": "street" },
-    { "text": "Wildflower Walk", "x": 505, "y": 560, "type": "street" },
-    { "text": "Wildflower Walk", "x": 694, "y": 1225, "type": "street" },
-    { "text": "Teacup Terrace", "x": 358, "y": 669, "type": "street" },
-    { "text": "Apple Cider Way", "x": 319, "y": 816, "type": "street" },
-    { "text": "Apple Cider Way", "x": 573, "y": 696, "type": "street" },
+    { "text": "Thistle & Thorn Terrace", "x": 250, "y": 830, "type": "street", "rotation": 0 },
+    { "text": "Juniper Grove", "x": 360, "y": 1115, "type": "street", "rotation": 0 },
+    { "text": "Toadstool Trail", "x": 520, "y": 1035, "type": "street", "rotation": 0 },
+    { "text": "Firefly Field", "x": 420, "y": 930, "type": "street", "rotation": 0 },
 
-    { "text": "Loot House", "x": 175, "y": 1044, "type": "major" },
-    { "text": "Trading Hall", "x": 660, "y": 388, "type": "major" },
-    { "text": "Market Spawn", "x": 217, "y": 154, "type": "major" }
+    { "text": "Teacup Terrace", "x": 370, "y": 560, "type": "street", "rotation": -20 },
+    { "text": "Apple Cider Way", "x": 280, "y": 430, "type": "street", "rotation": -25 },
+    { "text": "Apple Cider Way", "x": 520, "y": 560, "type": "street", "rotation": -25 },
+
+    { "text": "Wildflower Walk", "x": 625, "y": 60, "type": "street", "rotation": 0 },
+    { "text": "Wildflower Walk", "x": 455, "y": 265, "type": "street", "rotation": -90 },
+    { "text": "Wildflower Walk", "x": 485, "y": 715, "type": "street", "rotation": -15 },
+
+    { "text": "Candlelight Court", "x": 1035, "y": 760, "type": "street", "rotation": -90 },
+    { "text": "Candlelight Court", "x": 775, "y": 1225, "type": "street", "rotation": 0 },
+
+    { "text": "Loot House", "x": 190, "y": 170, "type": "major", "rotation": 0 },
+    { "text": "Trading Hall", "x": 610, "y": 995, "type": "major", "rotation": -90 },
+    { "text": "Market Spawn", "x": 170, "y": 1165, "type": "major", "rotation": 0 }
   ]
 }
