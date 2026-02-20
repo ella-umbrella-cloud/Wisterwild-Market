@@ -1,1 +1,98 @@
-[]
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop Claim Editor</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@7.5.2/ol.css" />
+  <style>
+    /* minimal layout so you don't have to fight CSS */
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    .wrap { display: grid; grid-template-columns: 1fr 360px; height: 100vh; }
+    #map { width: 100%; height: 100%; background: #111; }
+
+    .panel {
+      padding: 14px;
+      border-left: 1px solid #333;
+      background: rgba(20,20,20,0.95);
+      color: #fff;
+      overflow: auto;
+    }
+    .panel h2 { margin: 0 0 10px; font-size: 18px; }
+    .row { margin: 10px 0; }
+    .row label { display: block; font-size: 12px; opacity: 0.85; margin-bottom: 6px; }
+    .row input, .row select, .row textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      background: #0f0f0f;
+      color: #fff;
+      box-sizing: border-box;
+    }
+    .btns { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; margin-top: 12px; }
+    button {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #555;
+      background: #1b1b1b;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover { filter: brightness(1.15); }
+    .hint { font-size: 12px; opacity: 0.75; line-height: 1.35; margin-top: 10px; }
+    .status { font-size: 12px; margin-top: 8px; opacity: 0.9; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div id="map"></div>
+
+    <div class="panel">
+      <h2>Claim Editor</h2>
+
+      <div class="row">
+        <label>Selected address</label>
+        <input id="address" class="mono" readonly value="(click a plot)" />
+      </div>
+
+      <div class="row">
+        <label>Owner</label>
+        <select id="owner"></select>
+      </div>
+
+      <div class="row">
+        <label>Discord thread link (optional now, can add later)</label>
+        <input id="threadUrl" placeholder="https://discord.com/channels/..." />
+      </div>
+
+      <div class="btns">
+        <button id="saveBtn">Save</button>
+        <button id="clearBtn">Clear</button>
+        <button id="exportBtn">Export shops.json</button>
+        <button id="copyBtn">Copy JSON</button>
+      </div>
+
+      <div class="status" id="status"></div>
+
+      <div class="hint">
+        <div><b>How to use:</b></div>
+        <ol>
+          <li>Click a plot rectangle</li>
+          <li>Pick owner (“Open Lot” means unclaimed)</li>
+          <li>Paste thread link (optional)</li>
+          <li>Hit <b>Save</b></li>
+          <li>When done, <b>Export shops.json</b> and upload it into <span class="mono">data/shops.json</span></li>
+        </ol>
+        <div><b>Tip:</b> only “claimed” entries are exported (Open Lot/PENDING are ignored).</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ol@7.5.2/dist/ol.js"></script>
+  <script src="claim-editor.js"></script>
+</body>
+</html>
