@@ -15,6 +15,8 @@ const btnCopy    = document.getElementById("copyBtn");
 const OWNER_CHOICES = [
   "Open Lot",
   "PENDING",
+  "Trade Stall",
+  "XP Repair House",
 
   "Jaden1999",
   "Spider_Mir_Z",
