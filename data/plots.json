@@ -91,7 +91,7 @@
     { "address": "1109 Apple Cider Way", "x": 547, "y": 673, "w": 25, "h": 25, "serverBuilding": false },
     { "address": "1110 Apple Cider Way", "x": 525, "y": 775, "w": 24, "h": 26, "serverBuilding": true },
     { "address": "1111 Apple Cider Way", "x": 582, "y": 659, "w": 24, "h": 22, "serverBuilding": false },
-    { "address": "1112 Apple Cider Way", "x": 609, "y": 639, "w": 23, "h": 23, "serverBuilding": false },
+    { "address": "1112 Apple Cider Way", "x": 609, "y": 703, "w": 32, "h": 30, "serverBuilding": false },
     { "address": "1113 Apple Cider Way", "x": 610, "y": 640, "w": 23, "h": 23, "serverBuilding": false },
     { "address": "1114 Apple Cider Way", "x": 640, "y": 673, "w": 25, "h": 28, "serverBuilding": false }
   ]
