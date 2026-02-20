@@ -15,7 +15,7 @@
     { "text": "Wildflower Walk", "x": 518, "y": 555, "type": "street", "rotation": -90 },
     { "text": "Wildflower Walk", "x": 705, "y": 1220, "type": "street", "rotation": 0 },
 
-    { "text": "Teacup Terrace", "x": 370, "y": 660, "type": "street", "rotation": -25 },
+    { "text": "Teacup Terrace", "x": 370, "y": 660, "type": "street", "rotation": -32 },
 
     { "text": "Apple Cider Way", "x": 335, "y": 810, "type": "street", "rotation": -25 },
     { "text": "Apple Cider Way", "x": 585, "y": 690, "type": "street", "rotation": -25 },
