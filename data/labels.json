@@ -1,23 +1,27 @@
 {
   "labels": [
-    { "text": "Thistle & Thorn Terrace", "x": 250, "y": 830, "type": "street", "rotation": 0 },
-    { "text": "Juniper Grove", "x": 360, "y": 1115, "type": "street", "rotation": 0 },
-    { "text": "Toadstool Trail", "x": 520, "y": 1035, "type": "street", "rotation": 0 },
-    { "text": "Firefly Field", "x": 420, "y": 930, "type": "street", "rotation": 0 },
+    { "text": "Thistle & Thorn Terrace", "x": 220, "y": 520, "type": "street", "rotation": -18 },
 
-    { "text": "Teacup Terrace", "x": 370, "y": 560, "type": "street", "rotation": -20 },
-    { "text": "Apple Cider Way", "x": 280, "y": 430, "type": "street", "rotation": -25 },
-    { "text": "Apple Cider Way", "x": 520, "y": 560, "type": "street", "rotation": -25 },
+    { "text": "Juniper Grove", "x": 350, "y": 240, "type": "street", "rotation": 0 },
 
-    { "text": "Wildflower Walk", "x": 625, "y": 60, "type": "street", "rotation": 0 },
-    { "text": "Wildflower Walk", "x": 455, "y": 265, "type": "street", "rotation": -90 },
-    { "text": "Wildflower Walk", "x": 485, "y": 715, "type": "street", "rotation": -15 },
+    { "text": "Candlelight Court", "x": 805, "y": 60, "type": "street", "rotation": 0 },
+    { "text": "Candlelight Court", "x": 1035, "y": 360, "type": "street", "rotation": -90 },
 
-    { "text": "Candlelight Court", "x": 1035, "y": 760, "type": "street", "rotation": -90 },
-    { "text": "Candlelight Court", "x": 775, "y": 1225, "type": "street", "rotation": 0 },
+    { "text": "Firefly Field", "x": 382, "y": 410, "type": "street", "rotation": -12 },
 
-    { "text": "Loot House", "x": 190, "y": 170, "type": "major", "rotation": 0 },
-    { "text": "Trading Hall", "x": 610, "y": 995, "type": "major", "rotation": -90 },
-    { "text": "Market Spawn", "x": 170, "y": 1165, "type": "major", "rotation": 0 }
+    { "text": "Toadstool Trail", "x": 490, "y": 300, "type": "street", "rotation": -15 },
+
+    { "text": "Wildflower Walk", "x": 505, "y": 965, "type": "street", "rotation": -90 },
+    { "text": "Wildflower Walk", "x": 518, "y": 555, "type": "street", "rotation": -90 },
+    { "text": "Wildflower Walk", "x": 705, "y": 1220, "type": "street", "rotation": 0 },
+
+    { "text": "Teacup Terrace", "x": 370, "y": 660, "type": "street", "rotation": -25 },
+
+    { "text": "Apple Cider Way", "x": 335, "y": 810, "type": "street", "rotation": -25 },
+    { "text": "Apple Cider Way", "x": 585, "y": 690, "type": "street", "rotation": -25 },
+
+    { "text": "Loot House", "x": 185, "y": 1035, "type": "major", "rotation": 0 },
+    { "text": "Trading Hall", "x": 675, "y": 385, "type": "major", "rotation": 0 },
+    { "text": "Market Spawn", "x": 230, "y": 150, "type": "major", "rotation": 0 }
   ]
 }
