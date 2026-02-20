@@ -40,7 +40,7 @@ const OWNER_CHOICES = [
   "xXPanTheManXx",
   "Anchentguy132",
 
-  "localpsychoh696",
+  "localpsycho696",
   "BongoKat4366",
   "MimiDoll04",
   "CMGreen648",
