@@ -36,7 +36,31 @@ const OWNER_CHOICES = [
   "ChemicalRhino59",
   "Thundersgay",
   "xXPanTheManXx",
-  "Anchentguy132"
+  "Anchentguy132",
+
+  "localpsychoh696",
+  "BongoKat4366",
+  "MimiDoll04",
+  "CMGreen648",
+  "EliaraElander",
+  "PanchoDoesStuff",
+  "Obsidian_raven3",
+  "CuriousGabs",
+  "KZToonz",
+  "Struwbunny",
+  "LilAbsy",
+  "PurpleCapy",
+  "DarthRabbit526",
+  "UndeadUni",
+  "ZanaTheGM",
+  "SuperGirl966",
+  "Syphiex",
+  "savnuh5182",
+  "Virtchh",
+  "PocketPirate866",
+  "Swaelit4L",
+  "SkullCameo",
+  "Loretta1998"
 ];
 
 function setStatus(msg) {
