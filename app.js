@@ -51,6 +51,28 @@ let plotFeaturesByAddress = new Map();
 let shopByAddress = new Map();
 let plotsMeta = null;
 
+const avatarImageCache = new Map(); // key: owner|bedrock -> HTMLImageElement
+
+function getAvatarUrl(owner, isBedrock) {
+  if (isBedrock) return "https://mc-heads.net/avatar/Steve/128";
+  return `https://mc-heads.net/avatar/${encodeURIComponent(owner)}/128`;
+}
+
+function getAvatarImage(owner, bedrock) {
+  const key = `${owner}|${bedrock}`;
+  const existing = avatarImageCache.get(key);
+  if (existing) return existing;
+
+  const img = new Image();
+  img.crossOrigin = "anonymous";
+  img.src = getAvatarUrl(owner, bedrock);
+
+  // Re-render map once the image loads so it appears immediately
+  img.onload = () => window._mapRef?.render();
+
+  avatarImageCache.set(key, img);
+  return img;
+}
 function getAvatarUrl(owner, isBedrock) {
   if (isBedrock) return "https://mc-heads.net/avatar/Steve/128";
   return `https://mc-heads.net/avatar/${encodeURIComponent(owner)}/128`;
