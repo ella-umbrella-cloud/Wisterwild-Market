@@ -80,8 +80,10 @@ const h = extent[3] - extent[1];
 
 // Claimed → show head
 if (owner) {
-  const scale = Math.max(w, h) / 128;
+  const scale = Math.min(w, h) / 128;
   const cacheKey = `${owner}|${bedrock}|${scale.toFixed(3)}`;
+  const rawScale = Math.min(w, h) / 128;
+  const scale = Math.max(0.35, Math.min(rawScale, 0.80));
 
   if (avatarStyleCache.has(cacheKey)) {
     return avatarStyleCache.get(cacheKey);
