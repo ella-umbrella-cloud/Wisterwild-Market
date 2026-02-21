@@ -51,6 +51,13 @@ let plotFeaturesByAddress = new Map();
 let shopByAddress = new Map();
 let plotsMeta = null;
 
+function getAvatarUrl(owner, isBedrock) {
+  if (isBedrock) return "https://mc-heads.net/avatar/Steve/128";
+  return `https://mc-heads.net/avatar/${encodeURIComponent(owner)}/128`;
+}
+
+const avatarStyleCache = new Map(); // key: owner|bedrock|scale
+
 function stylePlot(feature) {
   const isServer = feature.get("serverBuilding") === true;
 
@@ -62,16 +69,49 @@ function stylePlot(feature) {
     });
   }
 
-  const claimed = !!feature.get("owner");
-  const isMatch = feature.get("_match") === true;
+  const owner = (feature.get("owner") || "").trim();
+const bedrock = feature.get("bedrock") === true;
 
-  const fillColor = claimed ? "rgba(0, 180, 0, 0.25)" : "rgba(120, 120, 120, 0.10)";
-  const matchFill = claimed ? "rgba(0, 180, 0, 0.45)" : "rgba(120, 120, 120, 0.25)";
+const geom = feature.getGeometry();
+const extent = geom.getExtent();
+const center = ol.extent.getCenter(extent);
+const w = extent[2] - extent[0];
+const h = extent[3] - extent[1];
 
-  return new ol.style.Style({
-    stroke: new ol.style.Stroke({ width: isMatch ? 3 : 2 }),
-    fill: new ol.style.Fill({ color: isMatch ? matchFill : fillColor })
-  });
+// Claimed → show head
+if (owner) {
+  const scale = Math.max(w, h) / 128;
+  const cacheKey = `${owner}|${bedrock}|${scale.toFixed(3)}`;
+
+  if (avatarStyleCache.has(cacheKey)) {
+    return avatarStyleCache.get(cacheKey);
+  }
+
+  const styles = [
+    new ol.style.Style({
+      stroke: new ol.style.Stroke({ color: "black", width: 2 }),
+      fill: new ol.style.Fill({ color: "rgba(0,0,0,0)" })
+    }),
+    new ol.style.Style({
+      geometry: new ol.geom.Point(center),
+      image: new ol.style.Icon({
+        src: getAvatarUrl(owner, bedrock),
+        scale,
+        opacity: 0.95,
+        crossOrigin: "anonymous"
+      })
+    })
+  ];
+
+  avatarStyleCache.set(cacheKey, styles);
+  return styles;
+}
+
+// Unclaimed plot
+return new ol.style.Style({
+  stroke: new ol.style.Stroke({ color: "black", width: 2 }),
+  fill: new ol.style.Fill({ color: "rgba(255,255,255,0.08)" })
+});
 }
 
 function styleLabel(feature) {
