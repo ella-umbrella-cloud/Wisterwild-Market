@@ -19,7 +19,7 @@ const OWNER_CHOICES = [
   "XP Repair House",
   "Ore Trade Hall",
   "Loot House",
-  "Market Spawn"
+  "Market Spawn,"
 
   "Jaden1999",
   ".Spider_Mir_Z",
