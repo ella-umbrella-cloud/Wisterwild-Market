@@ -273,7 +273,7 @@ function downloadJSON(filename, obj) {
   const extent = [0, 0, width, height];
   const projection = new ol.proj.Projection({ code: "PIXELS", units: "pixels", extent });
 
-  const imageLayer = .Image({
+  const imageLayer = new ol.layer.Image({
     source: new ol.source.ImageStatic({
       url: image,
       projection,
