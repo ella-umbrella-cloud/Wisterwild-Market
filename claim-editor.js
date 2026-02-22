@@ -129,6 +129,15 @@ function getAvatarImage(owner, bedrock) {
   avatarImageCache.set(key, img);
   return img;
 }
+/* ADD THIS RIGHT HERE */
+
+function isBedrockId(id) {
+  return typeof id === "string" && id.startsWith(".");
+}
+
+function displayNameFromId(id) {
+  return isBedrockId(id) ? id.slice(1) : id;
+}
 
 function getClaim(address) {
   return claimsByAddress[address] || null;
@@ -280,49 +289,6 @@ function downloadJSON(filename, obj) {
       imageExtent: extent
     })
   });
-  
-  function stylePlot(feature) {
-  const owner = (feature.get("owner") || "").trim();
-  const bedrock = feature.get("bedrock") === true;
-
-  if (owner) {
-    const img = getAvatarImage(owner, bedrock);
-
-    return new ol.style.Style({
-      stroke: new ol.style.Stroke({ color: "black", width: 2 }),
-      renderer: (pixelCoords, state) => {
-        const ctx = state.context;
-        const ring = pixelCoords[0];
-        if (!ring || ring.length < 4) return;
-
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(ring[0][0], ring[0][1]);
-        for (let i = 1; i < ring.length; i++) {
-          ctx.lineTo(ring[i][0], ring[i][1]);
-        }
-        ctx.closePath();
-        ctx.clip();
-
-        let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-        for (const [x, y] of ring) {
-          if (x < minX) minX = x;
-          if (y < minY) minY = y;
-          if (x > maxX) maxX = x;
-          if (y > maxY) maxY = y;
-        }
-
-        if (img.complete && img.naturalWidth) {
-          ctx.globalAlpha = 0.85;
-          ctx.drawImage(img, minX, minY, maxX - minX, maxY - minY);
-          ctx.globalAlpha = 1;
-        }
-
-        ctx.restore();
-      }
-    });
-  }
-
   // Unclaimed plots
   return new ol.style.Style({
     stroke: new ol.style.Stroke({ color: "black", width: 1 }),
@@ -332,8 +298,7 @@ function downloadJSON(filename, obj) {
   
   vectorSource = new ol.source.Vector();
   const vectorLayer = new ol.layer.Vector({
-    source: vectorSource,
-    style: stylePlot
+    source: vectorSource
   });
 
   for (const p of plots) {
