@@ -300,7 +300,8 @@ function downloadJSON(filename, obj) {
   
   vectorSource = new ol.source.Vector();
   const vectorLayer = new ol.layer.Vector({
-    source: vectorSource
+    source: vectorSource,
+    style: stylePlot
   });
 
   for (const p of plots) {
