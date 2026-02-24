@@ -42,6 +42,7 @@ const OWNER_CHOICES = [
   "Thundersgay",
   "xXPanTheManXx",
   "Anchentguy132",
+  "Struwbunny",
 
   ".localpsycho696",
   ".BongoKat4366",
