@@ -296,7 +296,7 @@ function downloadJSON(filename, obj) {
     stroke: new ol.style.Stroke({ color: "black", width: 1 }),
     fill: new ol.style.Fill({ color: "rgba(120,120,120,0.15)" })
   });
-}
+  }
   
   vectorSource = new ol.source.Vector();
   const vectorLayer = new ol.layer.Vector({
