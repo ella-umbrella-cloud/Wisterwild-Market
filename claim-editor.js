@@ -52,6 +52,7 @@ const OWNER_CHOICES = [
   ".PanchoDoesStuff",
   "Obsidian_raven3",
   "CuriousGabs",
+  ".Buzzboogaloo",
   "KZToonz",
   "Struwbunny",
   "LilAbsy",
