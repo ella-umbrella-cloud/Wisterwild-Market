@@ -32,6 +32,7 @@ const OWNER_CHOICES = [
   ".RedstoneCity13",
   ".Milady95",
   ".MissAlpha6531",
+  "Non_Profit Shop",
 
   "_Mizaki_",
   ".WACK_Stamps7",
