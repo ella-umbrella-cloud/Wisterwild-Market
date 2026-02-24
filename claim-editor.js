@@ -292,10 +292,32 @@ function downloadJSON(filename, obj) {
       imageExtent: extent
     })
   });
-  // Unclaimed plots
+
+  function stylePlot(feature) {
+  const address = feature.get("address");
+  const c = getClaim(address);
+  const owner = (c?.owner || "Open Lot").trim();
+
+  // Open lots = gold
+  if (!owner || owner === "Open Lot") {
+    return new ol.style.Style({
+      stroke: new ol.style.Stroke({ color: "black", width: 1 }),
+      fill: new ol.style.Fill({ color: "rgba(255,215,0,0.25)" })
+    });
+  }
+
+  // Pending = orange
+  if (owner === "PENDING") {
+    return new ol.style.Style({
+      stroke: new ol.style.Stroke({ color: "rgba(255,165,0,0.95)", width: 2 }),
+      fill: new ol.style.Fill({ color: "rgba(255,165,0,0.12)" })
+    });
+  }
+
+  // Claimed = light outline
   return new ol.style.Style({
-    stroke: new ol.style.Stroke({ color: "black", width: 1 }),
-    fill: new ol.style.Fill({ color: "rgba(120,120,120,0.15)" })
+    stroke: new ol.style.Stroke({ color: "rgba(0,0,0,0.65)", width: 1 }),
+    fill: new ol.style.Fill({ color: "rgba(0,0,0,0.02)" })
   });
 }
   
