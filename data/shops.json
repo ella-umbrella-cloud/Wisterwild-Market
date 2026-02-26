@@ -60,6 +60,11 @@
     "threadUrl": "https://discord.com/channels/1257016639401234535/1470567431612403910"
   },
   {
+    "address": "205 Firefly Field",
+    "owner": "Ore Trade Hall",
+    "threadUrl": ""
+  },
+  {
     "address": "300 Toadstool Trail",
     "owner": "MissAlpha6531",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1461962710970531933"
@@ -78,6 +83,31 @@
     "address": "402 Stardust Street",
     "owner": "Thundersgay",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1420167114429567128"
+  },
+  {
+    "address": "500 Candlelight Court",
+    "owner": "Anchentguy132",
+    "threadUrl": "https://discord.com/channels/1257016639401234535/1474269134182154311"
+  },
+  {
+    "address": "502 Candlelight Court",
+    "owner": "Struwbunny",
+    "threadUrl": "https://discord.com/channels/1257016639401234535/1474982638992228524"
+  },
+  {
+    "address": "800 Thistle & Thorn Terrace",
+    "owner": "Market Spawn",
+    "threadUrl": ""
+  },
+  {
+    "address": "802 Thistle & Thorn Terrace",
+    "owner": "Trade Stall",
+    "threadUrl": ""
+  },
+  {
+    "address": "804 Thistle & Thorn Terrace",
+    "owner": "Trade Stall",
+    "threadUrl": ""
   },
   {
     "address": "806 Thistle & Thorn Terrace",
@@ -105,14 +135,39 @@
     "threadUrl": ""
   },
   {
+    "address": "816 Thistle & Thorn Terrace",
+    "owner": "Loot House",
+    "threadUrl": ""
+  },
+  {
+    "address": "900 Wildflower Walk",
+    "owner": "Trade Stall",
+    "threadUrl": ""
+  },
+  {
+    "address": "901 Wildflower Walk",
+    "owner": "Trade Stall",
+    "threadUrl": ""
+  },
+  {
     "address": "902 Wildflower Walk",
     "owner": "UndeadUni",
+    "threadUrl": ""
+  },
+  {
+    "address": "903 Wildflower Walk",
+    "owner": "Trade Stall",
     "threadUrl": ""
   },
   {
     "address": "904 Wildflower Walk",
     "owner": "ZanaTheGM",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1461883962824724490"
+  },
+  {
+    "address": "905 Wildflower Walk",
+    "owner": "Trade Stall",
+    "threadUrl": ""
   },
   {
     "address": "906 Wildflower Walk",
@@ -160,9 +215,19 @@
     "threadUrl": "https://discord.com/channels/1257016639401234535/1468230692352688128"
   },
   {
+    "address": "1002 Teacup Terrace",
+    "owner": "Non_Profit Shop",
+    "threadUrl": ""
+  },
+  {
     "address": "1004 Teacup Terrace",
     "owner": "localpsychoh696",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1466220433341808640"
+  },
+  {
+    "address": "1006 Teacup Terrace",
+    "owner": ".Buzzboogaloo",
+    "threadUrl": "https://discord.com/channels/1257016639401234535/1474428498700538092"
   },
   {
     "address": "1100 Apple Cider Way",
