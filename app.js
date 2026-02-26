@@ -1,3 +1,12 @@
+window.onerror = function(msg, src, line, col, err) {
+  const pre = document.createElement("pre");
+  pre.style.background = "black";
+  pre.style.color = "red";
+  pre.style.padding = "10px";
+  pre.textContent = `ERROR:\n${msg}\nLine: ${line}`;
+  document.body.appendChild(pre);
+};
+
 // Minecraft Shop Map (OpenLayers) - GitHub Pages friendly
 // Data sources (static): data/plots.json, data/labels.json, data/stalls.json
 // Live data (bot-updated): data/shops.json
