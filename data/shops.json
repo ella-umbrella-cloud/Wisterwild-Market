@@ -82,7 +82,9 @@
   {
     "address": "402 Stardust Street",
     "owner": "_Mizaki_",
-    "threadUrl": "https://discord.com/channels/1257016639401234535/1465207302712987824"
+    "threadUrl": "https://discord.com/channels/1257016639401234535/1465207302712987824",
+    "items": [
+      { "Efficency V Book", "price": 500, "currency": "wildflowers" },
   },
   {
     "address": "500 Candlelight Court",
