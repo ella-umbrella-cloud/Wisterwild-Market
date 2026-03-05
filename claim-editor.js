@@ -63,7 +63,6 @@ const OWNER_CHOICES = [
   "ZanaTheGM",
   "SuperGirl966",
   ".Syphiex",
-  "savnuh5182",
   "Virtchh",
   ".PocketPirate866",
   ".Swaelit4L",
