@@ -39,6 +39,7 @@ const OWNER_CHOICES = [
   "dopeydistroga",
   ".Aster6093",
   ".ChemicalRhino59",
+  "NeoFangx",
   "Thundersgay",
   "xXPanTheManXx",
   "Anchentguy132",
