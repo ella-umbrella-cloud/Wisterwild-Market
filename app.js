@@ -175,6 +175,7 @@ function applyShopDataToFeatures() {
     feature.set("shopName", shop?.shopName || "");
     feature.set("threadUrl", shop?.threadUrl || "");
     feature.set("claimedAt", shop?.claimedAt || "");
+    feature.set("items", Array.isArray(shop?.items) ? shop.items : []);
   }
   plotLayer.changed();
 }
@@ -221,6 +222,32 @@ function openPopupForFeature(feature) {
   const address = feature.get("address");
   const shopName = feature.get("shopName");
   const threadUrl = feature.get("threadUrl");
+  const items = Array.isArray(feature.get("items")) ? feature.get("items") : [];
+
+  const itemsHtml = items.length
+    ? `
+      <div style="margin-top:10px;">
+        <b>Items:</b>
+        <ul style="margin:6px 0 0 18px; padding:0;">
+          ${items.map(item => {
+            const name = escapeHtml(item?.name || "");
+            const price = item?.price ?? "";
+            const currency = escapeHtml(item?.currency || "");
+            const notes = item?.notes ? ` <span style="color:#666;">(${escapeHtml(item.notes)})</span>` : "";
+
+            if (!name) return "";
+            if (price !== "" && currency) {
+              return `<li>${name} — ${price} ${currency}${notes}</li>`;
+            }
+            if (price !== "") {
+              return `<li>${name} — ${price}${notes}</li>`;
+            }
+            return `<li>${name}${notes}</li>`;
+          }).join("")}
+        </ul>
+      </div>
+    `
+    : `<div style="color:#666;margin-top:8px;">No items listed yet.</div>`;
 
   popupContent.innerHTML = `
     <div style="font-weight:800;font-size:16px;">${shopName ? escapeHtml(shopName) : escapeHtml(owner)}</div>
@@ -228,6 +255,7 @@ function openPopupForFeature(feature) {
       <div><b>Owner:</b> ${escapeHtml(owner)}</div>
       <div><b>Address:</b> ${escapeHtml(address)}</div>
       ${threadUrl ? `<div><a class="link" href="${threadUrl}" target="_blank" rel="noopener">Open Shop Thread</a></div>` : `<div style="color:#666;margin-top:8px;">No thread linked yet.</div>`}
+      ${itemsHtml}
     </div>
   `;
   popupEl.classList.remove("hidden");
@@ -283,6 +311,7 @@ function escapeHtml(s) {
       shopName: shop?.shopName || "",
       threadUrl: shop?.threadUrl || "",
       claimedAt: shop?.claimedAt || ""
+      items: Array.isArray(shop?.items) ? shop.items : []
     });
 
     plotFeaturesByAddress.set(addrKey, f);
