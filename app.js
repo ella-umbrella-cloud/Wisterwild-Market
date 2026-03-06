@@ -52,7 +52,6 @@ let shopByAddress = new Map();
 let plotsMeta = null;
 
 const avatarImageCache = new Map(); // key: owner|bedrock -> HTMLImageElement
-}
 
 function getAvatarImage(owner, bedrock) {
   const key = `${owner}|${bedrock}`;
