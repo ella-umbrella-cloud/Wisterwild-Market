@@ -52,10 +52,6 @@ let shopByAddress = new Map();
 let plotsMeta = null;
 
 const avatarImageCache = new Map(); // key: owner|bedrock -> HTMLImageElement
-
-function getAvatarUrl(owner, isBedrock) {
-  if (isBedrock) return "https://mc-heads.net/avatar/Steve/128";
-  return `https://mc-heads.net/avatar/${encodeURIComponent(owner)}/128`;
 }
 
 function getAvatarImage(owner, bedrock) {
