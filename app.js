@@ -9,6 +9,7 @@ const PLOTS_URL = "data/plots.json";
 const SHOPS_URL = "data/shops.json";
 const LABELS_URL = "data/labels.json";
 const STALLS_URL = "data/stalls.json";
+const GRAPHICS_URL = "data/graphics.json";
 
 const mapEl = document.getElementById("map");
 const popupEl = document.getElementById("popup");
@@ -272,6 +273,7 @@ function escapeHtml(s) {
 
   const labelsData = await loadJSON(LABELS_URL).catch(() => ({ labels: [] }));
   const stallsData = await loadJSON(STALLS_URL).catch(() => ({ stalls: [] }));
+  const graphicsData = await loadJSON(GRAPHICS_URL).catch(() => ({ graphics: [] }));
   const shopsData = await loadJSON(SHOPS_URL).catch(() => ([]));
 
   const { width, height, image } = plotsMeta;
@@ -346,9 +348,30 @@ function escapeHtml(s) {
     style: styleStall
   });
 
+  const graphicFeatures = (graphicsData.graphics || []).map(g => new ol.Feature({
+    geometry: new ol.geom.Point([g.x, g.y]),
+    name: g.name || "",
+    src: g.src,
+    scale: g.scale || 0.2
+}));
+
+const graphicLayer = new ol.layer.Vector({
+  source: new ol.source.Vector({ features: graphicFeatures }),
+  style: function(feature) {
+    return new ol.style.Style({
+      image: new ol.style.Icon({
+        src: feature.get("src"),
+        anchor: [0.5, 0.5],
+        scale: feature.get("scale") || 0.2,
+        crossOrigin: "anonymous"
+      })
+    });
+  }
+});
+  
   map = new ol.Map({
     target: "map",
-    layers: [imageLayer, plotLayer, stallLayer, labelLayer],
+    layers: [imageLayer, plotLayer, stallLayer, graphicLayer, labelLayer],
     view: new ol.View({
       projection,
       center: [width / 2, height / 2],
