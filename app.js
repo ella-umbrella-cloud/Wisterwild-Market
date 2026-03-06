@@ -306,7 +306,7 @@ function escapeHtml(s) {
       owner: shop?.owner || "",
       shopName: shop?.shopName || "",
       threadUrl: shop?.threadUrl || "",
-      claimedAt: shop?.claimedAt || ""
+      claimedAt: shop?.claimedAt || "",
       items: Array.isArray(shop?.items) ? shop.items : []
     });
 
