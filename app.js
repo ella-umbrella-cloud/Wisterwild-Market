@@ -167,6 +167,7 @@ function applyShopDataToFeatures() {
   for (const [addrKey, feature] of plotFeaturesByAddress.entries()) {
     const shop = shopByAddress.get(addrKey);
     feature.set("owner", shop?.owner || "");
+    feature.set("bedrock", typeof shop?.owner === "string" && shop.owner.startsWith("."));
     feature.set("shopName", shop?.shopName || "");
     feature.set("threadUrl", shop?.threadUrl || "");
     feature.set("claimedAt", shop?.claimedAt || "");
@@ -303,6 +304,7 @@ function escapeHtml(s) {
       address: p.address,
       serverBuilding: !!p.serverBuilding,
       owner: shop?.owner || "",
+      bedrock: typeof shop?.owner === "string" && shop.owner.startsWith ("."),
       shopName: shop?.shopName || "",
       threadUrl: shop?.threadUrl || "",
       claimedAt: shop?.claimedAt || "",
@@ -357,6 +359,8 @@ function escapeHtml(s) {
     })
   });
 
+  window._mapRef = map;
+  
   // Hover: show owner in tooltip
   map.on("pointermove", (evt) => {
     const f = map.forEachFeatureAtPixel(evt.pixel, feat => feat, { layerFilter: (l) => l === plotLayer });
