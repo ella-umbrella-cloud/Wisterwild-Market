@@ -36,7 +36,7 @@
   },
   {
     "address": "200 Firefly Field",
-    "owner": "Zalariah",
+    "owner": ".Zalariah",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1446213570361557122"
   },
   {
@@ -105,22 +105,22 @@
         "currency": "wildflowers"
       },
       {
-        "name": "Respiration III",
+        "name": "Respiration III Book",
         "price": 300,
         "currency": "wildflowers"
       },
       {
-        "name": "Depth Strider III",
+        "name": "Depth Strider III Book",
         "price": 300,
         "currency": "wildflowers"
       },
       {
-        "name": "Sharpness V",
+        "name": "Sharpness V Book",
         "price": 500,
         "currency": "wildflowers"
       },
       {
-        "name": "Silk Touch",
+        "name": "Silk Touch Book",
         "price": 400,
         "currency": "wildflowers"
       }
@@ -223,18 +223,18 @@
   },
   {
     "address": "908 Wildflower Walk",
-    "owner": "Syphiex",
+    "owner": ".Syphiex",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1435449839809859746"
   },
   {
     "address": "909 Wildflower Walk",
-    "owner": "savnuh5182",
-    "threadUrl": "https://discord.com/channels/1257016639401234535/1458642096771694592"
+    "owner": "",
+    "threadUrl": ""
   },
   {
     "address": "910 Wildflower Walk",
-    "owner": "PocketPirate866",
-    "threadUrl": "https://discord.com/channels/1257016639401234535/1464752074343321846"
+    "owner": "",
+    "threadUrl": ""
   },
   {
     "address": "911 Wildflower Walk",
@@ -243,7 +243,7 @@
   },
   {
     "address": "913 Wildflower Walk",
-    "owner": "Loretta1998",
+    "owner": ".Loretta1998",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1464456328012628206"
   },
   {
@@ -253,7 +253,7 @@
   },
   {
     "address": "918 Wildflower Walk",
-    "owner": "Swaelit4L",
+    "owner": ".Swaelit4L",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1461601357994791094"
   },
   {
@@ -263,7 +263,7 @@
   },
   {
     "address": "1004 Teacup Terrace",
-    "owner": "localpsychoh696",
+    "owner": ".localpsychoh696",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1466220433341808640"
   },
   {
@@ -274,7 +274,7 @@
   {
     "address": "1012 Teacup Terrace",
     "owner": ".PocketPirate866",
-    "threadUrl": ""
+    "threadUrl": "https://discord.com/channels/1257016639401234535/1464752074343321846"
   },
   {
     "address": "1100 Apple Cider Way",
@@ -283,7 +283,7 @@
   },
   {
     "address": "1101 Apple Cider Way",
-    "owner": "MimiDoll04",
+    "owner": ".MimiDoll04",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1397996547873964132"
   },
   {
@@ -293,7 +293,7 @@
   },
   {
     "address": "1103 Apple Cider Way",
-    "owner": "CMGreen648",
+    "owner": ".CMGreen648",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1398007367521534002"
   },
   {
@@ -303,7 +303,7 @@
   },
   {
     "address": "1106 Apple Cider Way",
-    "owner": "Struwbunny",
+    "owner": "",
     "threadUrl": ""
   },
   {
@@ -318,7 +318,7 @@
   },
   {
     "address": "1111 Apple Cider Way",
-    "owner": "PanchoDoesStuff",
+    "owner": ".PanchoDoesStuff",
     "threadUrl": ""
   },
   {
