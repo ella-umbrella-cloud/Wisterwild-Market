@@ -84,7 +84,46 @@
     "owner": "_Mizaki_",
     "threadUrl": "https://discord.com/channels/1257016639401234535/1465207302712987824",
     "items": [
-      { "name": "Efficency V Book", "price": 500, "currency": "wildflowers" }
+      { 
+        "name": "Efficiency V Book",
+        "price": 500, 
+        "currency": "wildflowers" 
+      },
+      {
+        "name": "Fortune III Book",
+        "price": 300,
+        "currency": "wildflowers"
+      },
+      {
+        "name": "Looting III Book",
+        "price": 300,
+        "currency": "wildflowers"
+      },
+      {
+        "name": "Feather Falling IV Book",
+        "price": 400,
+        "currency": "wildflowers"
+      },
+      {
+        "name": "Respiration III",
+        "price": 300,
+        "currency": "wildflowers"
+      },
+      {
+        "name": "Depth Strider III",
+        "price": 300,
+        "currency": "wildflowers"
+      },
+      {
+        "name": "Sharpness V",
+        "price": 500,
+        "currency": "wildflowers"
+      },
+      {
+        "name": "Silk Touch",
+        "price": 400,
+        "currency": "wildflowers"
+      }
     ]
   },
   {
