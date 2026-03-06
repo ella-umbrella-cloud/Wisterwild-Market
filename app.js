@@ -9,7 +9,6 @@ const PLOTS_URL = "data/plots.json";
 const SHOPS_URL = "data/shops.json";
 const LABELS_URL = "data/labels.json";
 const STALLS_URL = "data/stalls.json";
-const GRAPHICS_URL = "data/graphics.json";
 
 const mapEl = document.getElementById("map");
 const popupEl = document.getElementById("popup");
