@@ -78,11 +78,10 @@ const avatarStyleCache = new Map(); // key: owner|bedrock|scale
 function stylePlot(feature) {
   const isServer = feature.get("serverBuilding") === true;
 
-  // Server buildings: always show as gold.
   if (isServer) {
     return new ol.style.Style({
-      stroke: new ol.style.Stroke({ width: 3, color: "rgba(212, 175, 55, 0.95)" }),
-      fill: new ol.style.Fill({ color: "rgba(212, 175, 55, 0.28)" })
+      stroke: new ol.style.Stroke({ width: 0, color: "rgba(0,0,0,0)" }),
+      fill: new ol.style.Fill({ color: "rgba(0,0,0,0)" })
     });
   }
 
