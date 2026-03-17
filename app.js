@@ -272,7 +272,6 @@ function escapeHtml(s) {
 
   const labelsData = await loadJSON(LABELS_URL).catch(() => ({ labels: [] }));
   const stallsData = await loadJSON(STALLS_URL).catch(() => ({ stalls: [] }));
-  const graphicsData = await loadJSON(GRAPHICS_URL).catch(() => ({ graphics: [] }));
   const shopsData = await loadJSON(SHOPS_URL).catch(() => ([]));
 
   const { width, height, image } = plotsMeta;
@@ -347,20 +346,6 @@ function escapeHtml(s) {
     style: styleStall
   });
 
-const graphicLayer = new ol.layer.Vector({
-  source: new ol.source.Vector({ features: graphicFeatures }),
-  style: function(feature) {
-    return new ol.style.Style({
-      image: new ol.style.Icon({
-        src: feature.get("src"),
-        anchor: [0.5, 0.5],
-        scale: feature.get("scale") || 0.2,
-        crossOrigin: "anonymous"
-      })
-    });
-  }
-});
-  
   map = new ol.Map({
     target: "map",
     layers: [imageLayer, plotLayer, stallLayer, labelLayer],
