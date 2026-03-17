@@ -82,37 +82,12 @@
   {
     "address": "402 Stardust Street",
     "owner": "_Mizaki_",
-    "threadUrl": "https://discord.com/channels/1257016639401234535/1465207302712987824",
+    "threadUrl": "https://discord.com/channels/1257016639401234535/1482837294925742364",
     "items": [
       { 
         "name": "Efficiency V Book",
         "price": 500, 
         "currency": "wildflowers" 
-      },
-      {
-        "name": "Fortune III Book",
-        "price": 300,
-        "currency": "wildflowers"
-      },
-      {
-        "name": "Looting III Book",
-        "price": 300,
-        "currency": "wildflowers"
-      },
-      {
-        "name": "Feather Falling IV Book",
-        "price": 400,
-        "currency": "wildflowers"
-      },
-      {
-        "name": "Respiration III Book",
-        "price": 300,
-        "currency": "wildflowers"
-      },
-      {
-        "name": "Depth Strider III Book",
-        "price": 300,
-        "currency": "wildflowers"
       },
       {
         "name": "Sharpness V Book",
@@ -123,13 +98,13 @@
         "name": "Silk Touch Book",
         "price": 400,
         "currency": "wildflowers"
-      }
+      },
     ]
   },
   {
     "address": "500 Candlelight Court",
-    "owner": "Anchentguy132",
-    "threadUrl": "https://discord.com/channels/1257016639401234535/1474269134182154311"
+    "owner": "",
+    "threadUrl": ""
   },
   {
     "address": "502 Candlelight Court",
