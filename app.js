@@ -347,13 +347,6 @@ function escapeHtml(s) {
     style: styleStall
   });
 
-  const graphicFeatures = (graphicsData.graphics || []).map(g => new ol.Feature({
-    geometry: new ol.geom.Point([g.x, g.y]),
-    name: g.name || "",
-    src: g.src,
-    scale: g.scale || 0.2
-}));
-
 const graphicLayer = new ol.layer.Vector({
   source: new ol.source.Vector({ features: graphicFeatures }),
   style: function(feature) {
@@ -370,7 +363,7 @@ const graphicLayer = new ol.layer.Vector({
   
   map = new ol.Map({
     target: "map",
-    layers: [imageLayer, plotLayer, stallLayer, graphicLayer, labelLayer],
+    layers: [imageLayer, plotLayer, stallLayer, labelLayer],
     view: new ol.View({
       projection,
       center: [width / 2, height / 2],
